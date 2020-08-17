@@ -31,6 +31,8 @@ shinyUI(dashboardPage(
                             h4("4) Investigation of trends for using specific word types in Alexa-enabled product reviews throughout the 2016-2018 time period"),
                             h4("5) Visualization of Google trends for searches related to Alexa-enabled products throughout the 2016-2018 time period"),
                             h4("6) Analysis of the relationship between the use of specific word types and Google search trends for Alexa-enabled products"),
+                            h4("The data set used for this analysis was provided by Datafiniti's Product Database and consists of 5,000 consumer reviews for Amazon products such as Kindle, Fire TV Stick, and echo."), 
+                            h4("This data set includes basic product information, ratings, number of \"helful votes\" each review received, and review dates for each product."),
                             h6("*For more information regarding the research findings reported in this summary, please see the sources provided under Article Links."),
                             h6("**Source for Sentiment and Emotion Lexicon: \"Crowdsourcing a Word-Emotion Association Lexicon, Saif Mohammad and Peter Turney, Computational Intelligence, 29 (3), 436-465, 2013\"")
                     ),
