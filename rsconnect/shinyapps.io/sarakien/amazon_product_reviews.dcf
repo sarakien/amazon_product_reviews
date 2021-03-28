@@ -1,0 +1,12 @@
+name: amazon_product_reviews
+title: amazon_product_reviews
+username:
+account: sarakien
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3875140
+bundleId: 4404589
+url: https://sarakien.shinyapps.io/amazon_product_reviews/
+when: 1616949349.55456
+asMultiple: FALSE
+asStatic: FALSE

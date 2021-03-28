@@ -9,6 +9,9 @@ library(zoo)
 
 #Large DataSet, cleaned, mutated, and filtered
 my_data = read.csv("my_data.csv")
+hist(my_data2$reviews.numHelpful)
+my_data3 = my_data %>% filter(.,reviews.numHelpful < 1.5)
+hist(my_data3$reviews.numHelpful)
 
 my_data2 = my_data %>% filter(.,reviews.numHelpful < 50)
 
@@ -34,7 +37,7 @@ Sentiment_Data = as.data.frame(cbind(Sentiments, Sentiment_num))
 
 Sentiment_Data = transform(Sentiment_Data, Sentiment_num = as.numeric(Sentiment_num))
 
-Choice = c(colnames(my_rating_data),"Sentiment Analysis")
+##Choice = c(colnames(my_rating_data),"Sentiment Analysis")
 
 
 #Tables and Functions for "Word Type Examples" based on sentiment analysis 
@@ -66,9 +69,9 @@ my_data_gather = my_data_gather %>%
 my_data_gather = my_data_gather %>% 
   mutate(., alexa = ifelse(alexa == 1, "Alexa", "Not Alexa"))
 
-Product_Options = c("All Products","Alexa Products Only","Echo Products Only")
+##Product_Options = c("All Products","Alexa Products Only","Echo Products Only")
 
-Review_Options = c("Star Ratings", "Helpful Review Votes")
+##Review_Options = c("Star Ratings", "Helpful Review Votes")
 
   #Multiple Regression Analyses for my records
 alexa_data = my_data2 %>% filter(., alexa == 1) 
@@ -171,8 +174,6 @@ cor(final_date_data$mean_index,final_date_data$mean_sum_exp)
 cor(final_date_data$mean_index,final_date_data$mean_sum_emo)
 
 cor(final_date_data$mean_index,final_date_data$mean_sum_mat)
-
-
 
 
 
